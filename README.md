@@ -81,5 +81,5 @@ To retrain the models, run the notebook or `python train_models.py`.
 
 ## Links
 
-- GitHub repository: _add link_
-- Streamlit app: _add link_
+- GitHub repository: [https://github.com/Praveenbk-1908/ML_Assignment_2](https://github.com/Praveenbk-1908/ML_Assignment_2)
+- Streamlit app: [https://praveenbk-1908-ml-assignment-2-app-verba2.streamlit.app/](https://praveenbk-1908-ml-assignment-2-app-verba2.streamlit.app/)
