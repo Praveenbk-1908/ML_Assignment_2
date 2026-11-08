@@ -48,6 +48,8 @@ st.write(
 
 models = load_models()
 
+selected = st.selectbox("Select a model", list(models.keys()))
+
 uploaded = st.file_uploader("Upload test data (CSV)", type="csv")
 if uploaded is None:
     st.info("Upload a CSV file to see the results.")
@@ -75,7 +77,6 @@ all_results = {name: evaluate(pipe, X, y) for name, pipe in models.items()}
 st.dataframe(pd.DataFrame(all_results).T.round(4), use_container_width=True)
 
 st.subheader("Model details")
-selected = st.selectbox("Select a model", list(models.keys()))
 pipe = models[selected]
 metrics = all_results[selected]
 
